@@ -1,0 +1,25 @@
+{
+  "name": "pull-grpc",
+  "version": "1.0.0",
+  "description": "GRPC pull stream interface",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/pull-grpc",
+  "keywords": [
+    "pull-stream",
+    "grpc",
+    "network"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "istanbul": "^0.4.5",
+    "standard": "^8.0.0-beta.5",
+    "tape": "^4.6.0"
+  }
+}
